@@ -1,0 +1,33 @@
+---
+title: "RNotebookIntro"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+This is edited by Jon.  This is how you put code in the doc (output will be displayed below):
+```{r}
+head(cars)
+```
+
+Use the 'echo=FALSE' noted earlier if you don't want to add the code.
+
+```{r, echo=FALSE}
+plot(cars,col="blue")
+```
+
+If you want PDF document, then just change the output at the first chunk from "html_document" to "pdf_document"
